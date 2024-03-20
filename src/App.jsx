@@ -1,7 +1,11 @@
+import { UiContainerDesktop } from "./ui/containers/UiContainerDesktop"
+
 export const App = () => {
   return (
   <>
-    <h1>App</h1>
+    <UiContainerDesktop>
+      <h1>Hello</h1>
+    </UiContainerDesktop>
   </>
   )
 }
