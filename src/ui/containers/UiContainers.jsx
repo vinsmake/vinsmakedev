@@ -6,7 +6,7 @@ import './UiContainer.css'
 
 export const UiContainers = ({ children }) => {
     return (
-    <>
+    <div className='UiContainers'>
         <UiContainerDesktop>
         { children }
         </UiContainerDesktop>
@@ -19,6 +19,6 @@ export const UiContainers = ({ children }) => {
         <UiContainerMobile>
         { children }
         </UiContainerMobile>
-    </>
+    </div>
     )
 }

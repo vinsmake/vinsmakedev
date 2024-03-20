@@ -1,3 +1,8 @@
+
+.UiContainers {
+    width: 100%;
+    margin: 0;
+}
 .UiContainerDesktopMax {
     width: 1920px;
     border: 1px solid red;
