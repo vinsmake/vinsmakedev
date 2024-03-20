@@ -1,12 +1,14 @@
 //1366px - 885px
 
-
-import './UiContainer.css'
-
-export const UiContainerTablet = () => {
+export const UiContainerLaptop = ({ children }) => {
     return (
-    <section className="UIContainerTablet">
-
-    </section>
+        <>
+            <section className="UiContainerLaptopMax">
+                {children}
+            </section>
+            <section className="UiContainerLaptopMin">
+                {children}
+            </section>
+        </>
     )
 }

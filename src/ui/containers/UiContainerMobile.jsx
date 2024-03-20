@@ -1,12 +1,14 @@
 //430px - 360px
 
-
-import './UiContainer.css'
-
-export const UiContainerMobile = () => {
+export const UiContainerMobile = ({ children }) => {
     return (
-    <section className="UIContainerMobile">
-
-    </section>
+        <>
+            <section className="UiContainerMobileMax">
+                {children}
+            </section>
+            <section className="UiContainerMobileMin">
+                {children}
+            </section>
+        </>
     )
 }

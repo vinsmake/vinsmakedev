@@ -1,11 +1,14 @@
-import './UiContainer.css'
+//any  - 1367px
 
-export const UiContainerDesktop = ({ children }) => { 
+export const UiContainerDesktop = ({ children }) => {
     return (
-    <>
-        <section className='UiContainerDesktop'>
-            {children}
-        </section>
-    </>
+        <>
+            <section className='UiContainerDesktopMax'>
+                {children}
+            </section>
+            <section className='UiContainerDesktopMin'>
+                {children}
+            </section>
+        </>
     )
 }
