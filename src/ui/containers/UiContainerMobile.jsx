@@ -3,12 +3,12 @@
 export const UiContainerMobile = ({ children }) => {
     return (
         <>
-            <section className="UiContainerMobileMax">
+            <div className="UiContainerMobileMax">
                 {children}
-            </section>
-            <section className="UiContainerMobileMin">
+            </div>
+            <div className="UiContainerMobileMin">
                 {children}
-            </section>
+            </div>
         </>
     )
 }

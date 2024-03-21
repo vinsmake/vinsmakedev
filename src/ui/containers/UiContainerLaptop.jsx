@@ -3,12 +3,12 @@
 export const UiContainerLaptop = ({ children }) => {
     return (
         <>
-            <section className="UiContainerLaptopMax">
+            <div className="UiContainerLaptopMax">
                 {children}
-            </section>
-            <section className="UiContainerLaptopMin">
+            </div>
+            <div className="UiContainerLaptopMin">
                 {children}
-            </section>
+            </div>
         </>
     )
 }
