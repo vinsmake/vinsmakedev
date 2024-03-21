@@ -1,5 +1,4 @@
-/* Importing Google font - Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 
 h1 {
     color: #000000;
@@ -8,7 +7,7 @@ h1 {
 }
 
 h1 span {
-    color: #BD53ED;
+    color: #000000;
     position: relative;
 }
 
