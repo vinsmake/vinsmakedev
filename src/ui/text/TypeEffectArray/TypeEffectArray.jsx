@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TypeEffect = ({propWords}) => {
+export const TypeEffectArray = ({propWords}) => {
   const [wordIndex, setWordIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -9,7 +9,7 @@ const TypeEffect = ({propWords}) => {
   const words = propWords;
 
   useEffect(() => {
-    const typeEffect = () => {
+    const TypeEffectArray = () => {
       const currentWord = words[wordIndex];
       const currentChar = isDeleting ? currentWord.substring(0, charIndex - 1) : currentWord.substring(0, charIndex + 1);
 
@@ -25,7 +25,7 @@ const TypeEffect = ({propWords}) => {
       setCharIndex((prev) => (isDeleting ? prev - 1 : prev + 1));
     };
 
-    const typingInterval = setTimeout(typeEffect, isDeleting ? 100 : 200);
+    const typingInterval = setTimeout(TypeEffectArray, isDeleting ? 100 : 200);
 
     return () => clearTimeout(typingInterval);
   }, [wordIndex, charIndex, isDeleting]);
@@ -33,4 +33,4 @@ const TypeEffect = ({propWords}) => {
   return dynamicText; // Mostrar el texto dinámico directamente en un elemento h1
 };
 
-export default TypeEffect;
+
