@@ -1,6 +1,6 @@
 import './assets/helpers/normalize.css'
 import { UiContainers } from "./ui/containers/UiContainers"
-import { TypeEffectComponent } from './ui/text/TypeEffect/TypeEffectComponent'
+import { SetLettersArrayComponent } from './ui/text/SetLettersArray/SetLettersArrayComponent'
 
 
 
@@ -9,7 +9,7 @@ export const UiTest = () => {
   return (
   <>
     <UiContainers>
-      <TypeEffectComponent/>
+      <SetLettersArrayComponent/>
     </UiContainers>
   </>
   )
