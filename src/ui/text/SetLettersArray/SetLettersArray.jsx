@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-const LetterEffect = ({ words }) => {
+
+export const SetLettersArray = ({ words }) => {
   const [activeWordIndex, setActiveWordIndex] = useState(0);
-  const [activeLetters, setActiveLetters] = useState([]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -12,28 +12,21 @@ const LetterEffect = ({ words }) => {
     return () => clearInterval(intervalId);
   }, [words]);
 
-  useEffect(() => {
-    const word = words[activeWordIndex];
-    const letters = Array.from(word);
-
-    setActiveLetters(letters);
-  }, [activeWordIndex, words]);
-
   return (
     <div>
-      <div className="word">
-        {activeLetters.map((letter, index) => (
-          <span
-            key={index}
-            className={index === 0 ? 'in' : 'out'}
-            style={{ animationDelay: `${index * 50}ms` }}
-          >
-            {letter}
-          </span>
-        ))}
-      </div>
+      {words.map((word, wordIndex) => (
+        <div key={wordIndex} className={`word ${wordIndex === activeWordIndex ? 'active' : ''}`}>
+          {[...word].map((letter, letterIndex) => {
+            let letterAnimationDelay = 0.05 * letterIndex;
+            
+            return (
+              <span key={letterIndex} className={wordIndex === activeWordIndex ? 'in' : 'out'} style={{ animationDelay: `${letterAnimationDelay}s` }}>
+                {letter === ' ' ? '\u00A0' : letter}
+              </span>
+            );
+          })}
+        </div>
+      ))}
     </div>
   );
 };
-
-export default LetterEffect;

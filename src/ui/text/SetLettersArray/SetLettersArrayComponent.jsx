@@ -1,5 +1,5 @@
 
-import SetLettersArray from './setLettersArray'
+import {SetLettersArray} from './SetLettersArray'
 import './setLettersArray.css'
 
 export const SetLettersArrayComponent = ({propWords}) => {
