@@ -1,6 +1,6 @@
-import { SetLettersArray } from "./setLettersArray"
-import './setLettersArray.css'
 
+import SetLettersArray from './setLettersArray'
+import './setLettersArray.css'
 
 export const SetLettersArrayComponent = ({propWords}) => {
 
@@ -9,7 +9,11 @@ export const SetLettersArrayComponent = ({propWords}) => {
     return (
         <>
             <div>
-                <h1><span><SetLettersArray propWords={['diseñador', 'programador', 'roedor']}/></span></h1>
+                <h1 className="array">
+                    <SetLettersArray words={['diseñador', 'programador', 'roedor']}/>
+                    <span className="in">hello</span>    
+                    <span className="out">bye</span>    
+                </h1>
             </div>
         </>
     )
