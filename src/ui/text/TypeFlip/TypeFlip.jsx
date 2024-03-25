@@ -1,67 +1,67 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './typeflip.css';
 
 export const TypeFlip = ({ propWords }) => {
+    const [activeLetterBoxIndex, setActiveLetterBoxIndex] = useState(0);
+    const [lastActiveLetterBoxIndex, setLastActiveLetterBoxIndex] = useState(0);
+    const [totalLetterBoxDelay, setTotalLetterBoxDelay] = useState(0);
 
-  const [activeLetterBoxIndex, setActiveLetterBoxIndex] = useState(0);
-  const [lastActiveLetterBoxIndex, setLastActiveLetterBoxIndex] = useState(0);
-  const [totalLetterBoxDelay, setTotalLetterBoxDelay] = useState(0);
+    const letterBoxesRefs = useRef([]);
 
-  useEffect(() => {
-    const letterBoxes = document.querySelectorAll("[data-letter-effect]");
+    useEffect(() => {
+        const setLetterEffect = () => {
+            letterBoxesRefs.current.forEach((boxRef, i) => {
+                const letters = propWords[i].trim();
+                let letterAnimationDelay = 0;
 
-    const setLetterEffect = () => {
-      for (let i = 0; i < letterBoxes.length; i++) {
-        let letterAnimationDelay = 0;
-        const letters = letterBoxes[i].textContent.trim();
-        letterBoxes[i].textContent = "";
+                boxRef.textContent = "";
 
-        for (let j = 0; j < letters.length; j++) {
-          const span = document.createElement("span");
-          span.style.animationDelay = `${letterAnimationDelay}s`;
+                for (let j = 0; j < letters.length; j++) {
+                    const span = document.createElement("span");
+                    span.style.animationDelay = `${letterAnimationDelay}s`;
 
-          if (i === activeLetterBoxIndex) {
-            span.classList.add("in");
-          } else {
-            span.classList.add("out");
-          }
+                    if (i === activeLetterBoxIndex) {
+                        span.classList.add("in");
+                    } else {
+                        span.classList.add("out");
+                    }
 
-          span.textContent = letters[j];
+                    span.textContent = letters[j];
 
-          if (letters[j] === " ") span.classList.add("space");
+                    if (letters[j] === " ") span.classList.add("space");
 
-          letterBoxes[i].appendChild(span);
+                    boxRef.appendChild(span);
 
-          if (j >= letters.length - 1) break;
-          letterAnimationDelay += 0.05;
-        }
+                    if (j >= letters.length - 1) break;
+                    letterAnimationDelay += 0.05;
+                }
 
-        if (i === activeLetterBoxIndex) {
-          setTotalLetterBoxDelay(Number(letterAnimationDelay.toFixed(2)));
-        }
+                if (i === activeLetterBoxIndex) {
+                    setTotalLetterBoxDelay(Number(letterAnimationDelay.toFixed(2)));
+                }
 
-        if (i === lastActiveLetterBoxIndex) {
-          letterBoxes[i].classList.add("active");
-        } else {
-          letterBoxes[i].classList.remove("active");
-        }
-      }
+                if (i === lastActiveLetterBoxIndex) {
+                    boxRef.classList.add("active");
+                } else {
+                    boxRef.classList.remove("active");
+                }
+            });
 
-      setTimeout(() => {
-        setLastActiveLetterBoxIndex(activeLetterBoxIndex);
-        setActiveLetterBoxIndex(activeLetterBoxIndex >= letterBoxes.length - 1 ? 0 : activeLetterBoxIndex + 1);
-      }, (totalLetterBoxDelay * 1000) + 3000);
-    };
+            setTimeout(() => {
+                setLastActiveLetterBoxIndex(activeLetterBoxIndex);
+                setActiveLetterBoxIndex(activeLetterBoxIndex >= propWords.length - 1 ? 0 : activeLetterBoxIndex + 1);
+            }, (totalLetterBoxDelay * 1000) + 3000);
+        };
 
-    setLetterEffect();
+        setLetterEffect();
 
-  }, [activeLetterBoxIndex, lastActiveLetterBoxIndex, totalLetterBoxDelay]);
+    }, [activeLetterBoxIndex, lastActiveLetterBoxIndex, totalLetterBoxDelay, propWords]);
 
-  return (
-    <div className="wrapper">
-      {propWords.map((word, index) => (
-        <p key={index} className="word" data-letter-effect>{word}</p>
-      ))}
-    </div>
-  );
+    return (
+        <div className="wrapper">
+            {propWords.map((word, index) => (
+                <p key={index} className="word" ref={ref => (letterBoxesRefs.current[index] = ref)}>{word}</p>
+            ))}
+        </div>
+    );
 };
