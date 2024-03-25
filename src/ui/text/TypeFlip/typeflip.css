@@ -1,0 +1,41 @@
+.wrapper {
+    position: relative;
+    height: 5rem;
+  }
+  
+  .word {
+    position: absolute;
+    display: flex;
+    font-size: 40px;
+  }
+  
+  .space {
+    padding: 0.1em;
+  }
+  
+  :is(.in, .out) {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  
+  .word.active .out {
+    opacity: 1;
+    transform: scaleY(1);
+    animation: textWave 0.2s ease reverse forwards;
+  }
+  
+  .in {
+    animation: textWave 0.2s ease forwards;
+  }
+  
+  @keyframes textWave {
+    0% {
+      opacity: 0;
+      transform: scaleY(0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }

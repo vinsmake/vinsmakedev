@@ -1,6 +1,6 @@
 import './assets/helpers/normalize.css'
 import { UiContainers } from "./ui/containers/UiContainers"
-import { SetLettersArrayComponent } from './ui/text/SetLettersArray/SetLettersArrayComponent'
+import { TypeFlip } from './ui/text/TypeFlip/TypeFlip'
 
 
 
@@ -9,7 +9,7 @@ export const UiTest = () => {
   return (
   <>
     <UiContainers>
-      <SetLettersArrayComponent/>
+      <TypeFlip propWords={['React Developer', 'UX Designer', 'MERN/PERN Developer']}/>
     </UiContainers>
   </>
   )
