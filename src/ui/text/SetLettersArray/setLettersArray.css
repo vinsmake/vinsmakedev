@@ -1,42 +1,58 @@
 .array {
+  font-size: 40px;
+  height: 60px;
   position: relative;
-  text-align: left;
-  height: 1.2em;
-  margin-block: 10px 25px;
 }
 
 .array .word {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 300px;
-  font-weight: inherit;
   display: flex;
+  position: absolute;
 }
 
-.array :is(.in, .out) {
+/* hacer invisibles a ambos */
+.array .word :is(.in, .out) {
+  opacity: 0;
+}
+
+
+.word .active {
+  opacity: 0;
+  transform: scaleY(1);
+}
+
+
+.active .in {
+  animation: textWave 0.2s ease forwards;
+}
+
+.word .in {
+  animation: textWaveOut 3s;
+}
+
+/* animacion para hacer visible */
+@keyframes textWave {
+  0% {
     opacity: 0;
     transform: scaleY(0);
   }
-  
-.word .active .out {
+
+  100% {
     opacity: 1;
     transform: scaleY(1);
-    animation: textWave 0.2s ease reverse forwards;
   }
-  
-.array .in { animation: textWave 0.2s ease forwards; }
-  
-  @keyframes textWave {
-    0% {
-      opacity: 0;
-      transform: scaleY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: scaleY(1);
-    }
-  }
+}
 
-  
+@keyframes textWaveOut {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  95% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}
