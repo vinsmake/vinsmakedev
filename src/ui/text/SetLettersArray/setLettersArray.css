@@ -5,7 +5,7 @@
   margin-block: 10px 25px;
 }
 
-.array .strong {
+.array .word {
   position: absolute;
   top: 0;
   left: 50%;
@@ -20,7 +20,7 @@
     transform: scaleY(0);
   }
   
-.strong.active .out {
+.word .active .out {
     opacity: 1;
     transform: scaleY(1);
     animation: textWave 0.2s ease reverse forwards;
@@ -38,3 +38,5 @@
       transform: scaleY(1);
     }
   }
+
+  
