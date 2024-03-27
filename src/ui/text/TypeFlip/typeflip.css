@@ -1,12 +1,10 @@
 .wrapper {
+
     position: relative;
-    height: 5rem;
   }
   
   .word {
     position: absolute;
-    display: flex;
-    font-size: 40px;
   }
   
   .space {
@@ -37,5 +35,19 @@
     100% {
       opacity: 1;
       transform: scaleY(1);
+
+    }
+  }
+
+  @keyframes textWaveOut {
+    0% {
+      display: flex;
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      display: none;
+
     }
   }
