@@ -1,13 +1,13 @@
-import './assets/helpers/normalize.css'
-import { UiContainers } from "./ui/containers/UiContainers"
+import './styles/normalize.css'
+import './styles/styles.css'
+import { RychardRyan } from './ui/hero/RychardRyan/RychardRyan'
+
 
 
 export const App = () => {
   return (
   <>
-    <UiContainers>
-      <h1>Hello</h1>
-    </UiContainers>
+    <RychardRyan/>
   </>
   )
 }

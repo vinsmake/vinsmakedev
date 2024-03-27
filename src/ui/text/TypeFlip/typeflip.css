@@ -1,0 +1,52 @@
+/* we use em to take the father font sice */
+.wrapper {
+  position: relative;
+  height: 1.5em;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  display: flex;
+}
+
+.in {
+  animation: textWave 0.2s ease forwards;
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.out {
+  transform: scaleY(0);
+}
+
+.space {
+  padding: 0.1em;
+}
+
+
+
+.word.active .out {
+  opacity: 1;
+  transform: scaleY(1);
+  animation: textWave 0.2s ease reverse forwards;
+}
+
+
+
+@keyframes textWave {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+
+  }
+}

@@ -1,0 +1,58 @@
+.array {
+  font-size: 40px;
+  height: 60px;
+  position: relative;
+}
+
+.array .word {
+  display: flex;
+  position: absolute;
+}
+
+/* hacer invisibles a ambos */
+.array .word :is(.in, .out) {
+  opacity: 0;
+}
+
+
+.word .active {
+  opacity: 0;
+  transform: scaleY(1);
+}
+
+
+.active .in {
+  animation: textWave 0.2s ease forwards;
+}
+
+.word .in {
+  animation: textWaveOut 3s;
+}
+
+/* animacion para hacer visible */
+@keyframes textWave {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes textWaveOut {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  95% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+}

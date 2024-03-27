@@ -1,0 +1,56 @@
+/*-----------------------------------*\
+  #FONTS#
+
+  You should change the fonts, but not
+  the names, so all components can fix
+  with the new fonts.
+
+  We use three fonts in every design,
+  1.- Primary (default font, text and
+    subheaders, easy to read)
+  2.- Secondary (headliners)
+  3.- Accent (rarely used, mostly for
+    buttons, tags, dates, links, etc.)
+\*-----------------------------------*/
+@font-face {
+    font-family: 'FontSecondary';
+    src: url('fonts/Cormorant-VariableFont_wght.ttf');
+}
+
+
+
+:root {
+    --ffs: 'FontSecondary';
+
+    
+    --fwl: 'lighter';
+    --fwn: 'normal';
+    --fwb: 'bolder';
+
+
+    --cbackground: hsl(0, 0%, 7%);
+    --ctext: hsl(0, 0%, 100%);
+
+}
+
+body {
+  background-color: var(--cbackground);
+}
+
+
+@media (min-width: 576px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1280px) {
+
+}
+@media (min-width: 1536px) {
+
+}
+
