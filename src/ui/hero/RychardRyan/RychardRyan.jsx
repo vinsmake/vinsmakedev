@@ -19,7 +19,7 @@ const {hero1, hero2, hero3, logo} = RychardRyanData
                         <h1 className="hero-title">{hero1}</h1>
 
                         <div className="subheader">
-                            <p><TypeFlip propWords={['diseñador', 'programador', 'roedor']}/></p>
+                            <p><TypeFlip propWords={['UX Designer', 'Full Stack Developer', 'React Native Developer', ]}/></p>
                         </div>
 
                         <p className="hero-text">{hero3}</p>
