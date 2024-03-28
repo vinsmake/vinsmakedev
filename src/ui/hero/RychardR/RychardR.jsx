@@ -18,12 +18,16 @@ export const RychardR = () => {
                         <p><TypeFlip propWords={['UX Designer', 'Full Stack Developer', 'React Native Developer',]} /></p>
                     </div>
                     <p className="RychardR-text">{hero3}</p>
-                    <img src={signature} className='RychardR-signature' onClick={() => SaveContact({
+                    
+                    <div onClick={() => SaveContact({
                         name: 'Enrique Plascencia',
                         phone: '3336610692',
                         email: 'ps.enrique.e@gmail.com',
                         website: 'vinsmake.dev'
-                    })} />
+                    })}>
+                    <img src={signature} className='RychardR-signature'/>
+                    <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
+                    </div>
                 </div>
             </section>
         </>
