@@ -5,7 +5,7 @@ import { TypeFlip } from '../../text/TypeFlip/TypeFlip'
 
 export const RychardR = () => {
 
-    const { hero1, hero2, hero3, logo} = RychardRData
+    const { hero1, hero2, hero3, logo, signature} = RychardRData
 
     return (
         <>
@@ -17,6 +17,7 @@ export const RychardR = () => {
                         <p><TypeFlip propWords={['UX Designer', 'Full Stack Developer', 'React Native Developer',]} /></p>
                     </div>
                     <p className="RychardR-text">{hero3}</p>
+                    <img src={signature} className='RychardR-signature'/>
                 </div>
             </section>
         </>
