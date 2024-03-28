@@ -21,14 +21,14 @@ export const TypeFlip = ({ propWords }) => {
                     span.style.animationDelay = `${letterAnimationDelay}s`;
 
                     if (i === activeLetterBoxIndex) {
-                        span.classList.add("in");
+                        span.classList.add("TypeFlip-in");
                     } else {
-                        span.classList.add("out");
+                        span.classList.add("TypeFlip-out");
                     }
 
                     span.textContent = letters[j];
 
-                    if (letters[j] === " ") span.classList.add("space");
+                    if (letters[j] === " ") span.classList.add("TypeFlip-space");
 
                     boxRef.appendChild(span);
 
@@ -41,9 +41,9 @@ export const TypeFlip = ({ propWords }) => {
                 }
 
                 if (i === lastActiveLetterBoxIndex) {
-                    boxRef.classList.add("active");
+                    boxRef.classList.add("TypeFlip-active");
                 } else {
-                    boxRef.classList.remove("active");
+                    boxRef.classList.remove("TypeFlip-active");
                 }
             });
 
@@ -58,9 +58,9 @@ export const TypeFlip = ({ propWords }) => {
     }, [activeLetterBoxIndex, lastActiveLetterBoxIndex, totalLetterBoxDelay, propWords]);
 
     return (
-        <div className='wrapper'>
+        <div className='TypeFlip-wrapper'>
             {propWords.map((word, index) => (
-                <span key={index} className="word" ref={ref => (letterBoxesRefs.current[index] = ref)}>{word}</span>
+                <span key={index} className="TypeFlip-word" ref={ref => (letterBoxesRefs.current[index] = ref)}>{word}</span>
             ))}
         </div>
     );

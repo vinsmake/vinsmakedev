@@ -1,13 +1,13 @@
 import './styles/normalize.css'
 import './styles/styles.css'
-import { RychardRyan } from './ui/hero/RychardRyan/RychardRyan'
+import { RychardR } from './ui/hero/RychardR/RychardR'
 
 
 
 export const App = () => {
   return (
   <>
-    <RychardRyan/>
+    <RychardR/>
   </>
   )
 }
