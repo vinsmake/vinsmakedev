@@ -6,7 +6,7 @@ const handleClick = () => {
         name: "Enrique Plascencia",
         phone: "3336650692",
         email: "ps.enrique.e@gmail.com",
-        webpage: "vinsmake.dev"
+        website: "vinsmake.dev"
     };
     SaveContact({contact})
 }

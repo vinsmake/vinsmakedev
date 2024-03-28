@@ -1,8 +1,6 @@
-export const SaveContact = ({contact}) => {
+export const SaveContact = ({name, phone, email, website}) => {
 
-    const {name, phone, email, webpage} = contact
-
-    const vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + name + "\nTEL;TYPE=work,voice:" + phone + "\nEMAIL:" + email + "\nURL:" + webpage + "\nEND:VCARD"
+    const vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + name + "\nTEL;TYPE=work,voice:" + phone + "\nEMAIL:" + email + "\nURL:" + website + "\nEND:VCARD"
     const blob = new Blob([vcard], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);
 
