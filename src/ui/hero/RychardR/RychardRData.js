@@ -1,4 +1,4 @@
-export const RychardRyanData =
+export const RychardRData =
 {
     'hero1': 'Enrique Plascencia',
     'hero2': 'Full Stack Developer',

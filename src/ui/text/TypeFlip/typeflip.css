@@ -1,36 +1,35 @@
 /* we use em to take the father font sice */
-.wrapper {
+.TypeFlip-wrapper {
   position: relative;
   height: 1.5em;
   margin: 0;
 }
 
-.word {
+.TypeFlip-word {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: auto;
   display: flex;
 }
 
-.in {
+.TypeFlip-in {
   animation: textWave 0.2s ease forwards;
   opacity: 0;
   transform: scaleY(0);
 }
 
-.out {
+.TypeFlip-out {
   transform: scaleY(0);
 }
 
-.space {
+.TypeFlip-space {
   padding: 0.1em;
 }
 
 
 
-.word.active .out {
+.TypeFlip-word.TypeFlip-active .TypeFlip-out {
   opacity: 1;
   transform: scaleY(1);
   animation: textWave 0.2s ease reverse forwards;
