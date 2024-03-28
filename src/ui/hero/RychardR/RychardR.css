@@ -1,8 +1,11 @@
 .RychardR {
-  padding-block-start: 120px;
-  text-align: center;
   font-family: var(--ffs);
   color: var(--ctext);
+}
+
+.RychardR-content {
+  display: block;
+  text-align: center;
 }
 
 .RychardR-logo {
