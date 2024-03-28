@@ -29,5 +29,6 @@
 }
 
 .RychardR-signature {
-  width: 25rem;
+  margin: 1rem 0 0 0;
+  width: clamp(15rem, 25rem, 80%);
 }
