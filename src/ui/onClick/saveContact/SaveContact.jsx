@@ -1,5 +1,6 @@
-export const SaveContact = ({name, phone, email, website}) => {
+export const SaveContact = ({ name, phone, email, website }) => {
 
+    /* create the vcard */
     const vcard = "BEGIN:VCARD\nVERSION:4.0\nFN:" + name + "\nTEL;TYPE=work,voice:" + phone + "\nEMAIL:" + email + "\nURL:" + website + "\nEND:VCARD"
     const blob = new Blob([vcard], { type: "text/vcard" });
     const url = URL.createObjectURL(blob);
@@ -10,5 +11,5 @@ export const SaveContact = ({name, phone, email, website}) => {
     newLink.textContent = name;
     newLink.href = url;
 
-    newLink.click(); 
+    newLink.click();
 }

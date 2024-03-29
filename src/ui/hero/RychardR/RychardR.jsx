@@ -2,6 +2,7 @@ import { RychardRData } from './RychardRData'
 import './RychardR.css'
 import { TypeFlip } from '../../text/TypeFlip/TypeFlip'
 import { SaveContact } from '../../onClick/saveContact/saveContact'
+import SaveContactButton from '../../onClick/saveContact/SaveContactButton.jsx'
 
 
 export const RychardR = () => {
@@ -27,7 +28,9 @@ export const RychardR = () => {
                     })}>
                     <img src={signature} className='RychardR-signature'/>
                     <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
+                    
                     </div>
+                    <SaveContactButton/>
                 </div>
             </section>
         </>
