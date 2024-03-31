@@ -2,7 +2,6 @@ import { RychardRData } from './RychardRData'
 import './RychardR.css'
 import { TypeFlip } from '../../text/TypeFlip/TypeFlip'
 import { SaveContact } from '../../onClick/saveContact/saveContact'
-import SaveContactButton from '../../onClick/saveContact/SaveContactButton.jsx'
 
 
 export const RychardR = () => {

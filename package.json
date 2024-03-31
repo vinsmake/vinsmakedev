@@ -14,6 +14,8 @@
     "gitPages": "npm run gitUpdate && npm run gitDeploy"
   },
   "dependencies": {
+    "@tsparticles/all": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
