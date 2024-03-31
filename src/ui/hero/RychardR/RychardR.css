@@ -29,6 +29,10 @@
   letter-spacing: 5px;
 }
 
+.RychardR-contact {
+  font-size: 2rem;
+}
+
 .RychardR-signature {
   margin: 1rem 0 0 0;
   width: clamp(15rem, 25rem, 80%);
