@@ -1,0 +1,1 @@
+import{_ as i}from"./index-70064160.js";async function d(t,a=!0){await t.addParticleUpdater("life",async e=>{const{LifeUpdater:r}=await i(()=>import("./LifeUpdater-9b12b006.js"),["assets/LifeUpdater-9b12b006.js","assets/ValueWithRandom-f6648687.js","assets/index-70064160.js","assets/index-5b50b8e6.css"]);return new r(e)},a)}export{d as loadLifeUpdater};
