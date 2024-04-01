@@ -31,7 +31,7 @@ const ParticlesComponent = (props) => {
 
    // Obtener el valor de la variable CSS
    const root = document.documentElement;
-   const particleColor = getComputedStyle(root).getPropertyValue('--ctext');
+   const particleColor = getComputedStyle(root).getPropertyValue('--c-text');
 
 
   const options = useMemo(
@@ -107,3 +107,5 @@ const ParticlesComponent = (props) => {
 };
 
 export default ParticlesComponent;
+
+
