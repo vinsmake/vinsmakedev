@@ -1,1 +1,0 @@
-import{_ as i}from"./index-058518ea.js";async function p(t,a=!0){await t.addParticleUpdater("opacity",async r=>{const{OpacityUpdater:e}=await i(()=>import("./OpacityUpdater-98cff3e7.js"),["assets/OpacityUpdater-98cff3e7.js","assets/index-058518ea.js","assets/index-b1b3cdea.css"]);return new e(r)},a)}export{p as loadOpacityUpdater};
