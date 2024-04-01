@@ -29,81 +29,81 @@ const ParticlesComponent = (props) => {
     console.log(container);
   };
 
-   // Obtener el valor de la variable CSS
-   const root = document.documentElement;
-   const particleColor = getComputedStyle(root).getPropertyValue('--c-text');
+  // Obtener el valor de la variable CSS
+  const root = document.documentElement;
+  const particleColor = getComputedStyle(root).getPropertyValue('--c-accent');
 
 
   const options = useMemo(
     () => (
-        {
-      fpsLimit: 60,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
+      {
+        fpsLimit: 60,
+        interactivity: {
+          events: {
+            onClick: {
+              enable: true,
+              mode: "repulse",
+            },
+            onHover: {
+              enable: true,
+              mode: 'grab',
+            },
           },
-          onHover: {
-            enable: true,
-            mode: 'grab',
+          modes: {
+            push: {
+              distance: 200,
+              duration: 10,
+            },
+            grab: {
+              distance: 100,
+            },
           },
         },
-        modes: {
-          push: {
-            distance: 200,
-            duration: 10,
+        particles: {
+          color: {
+            value: particleColor,
           },
-          grab: {
+          links: {
+            color: particleColor,
             distance: 100,
+            enable: false,
+            opacity: 0.3,
+            width: 1,
           },
-        },
-      },
-      particles: {
-        color: {
-          value: particleColor,
-        },
-        links: {
-          color: particleColor,
-          distance: 150,
-          enable: false,
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          direction: "bottom",
-          enable: true,
-          outModes: {
-            default: "out",
-          },
-          random: true,
-          speed: 1,
-          straight: false,
-        },
-        number: {
-          density: {
+          move: {
+            direction: "bottom",
             enable: true,
+            outModes: {
+              default: "out",
+            },
+            random: true,
+            speed: 1,
+            straight: false,
           },
-          value: 200,
+          number: {
+            density: {
+              enable: true,
+            },
+            value: 200,
+          },
+          opacity: {
+            value: 0.7,
+          },
+          shape: {
+            type: "circle",
+          },
+          size: {
+            value: { min: 1, max: 3 },
+          },
         },
-        opacity: {
-          value: 0.7,
-        },
-        shape: {
-          type: "circle",
-        },
-        size: {
-          value: { min: 1, max: 3 },
-        },
-      },
-      detectRetina: true,
-    }
+        detectRetina: true,
+      }
     ),
     [],
   );
 
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
 export default ParticlesComponent;

@@ -21,6 +21,7 @@ export const RychardR = () => {
                     </div>
                     <p className="RychardR-text">{hero3}</p>
 
+                    <img src={signature} className='RychardR-signature' />
                     <div
                         className='RychardR-contact'
                         onClick={() => SaveContact({
@@ -29,7 +30,7 @@ export const RychardR = () => {
                             email: 'ps.enrique.e@gmail.com',
                             website: 'vinsmake.dev'
                         })}>
-                        <img src={signature} className='RychardR-signature' />
+                        
                         <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
 
                     </div>
