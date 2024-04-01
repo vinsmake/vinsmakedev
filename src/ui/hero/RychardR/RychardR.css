@@ -33,9 +33,13 @@
   font-size: var(--fs-l);
 }
 
-.RychardR-title, .RychardR-subheader, .RychardR-text, .RychardR-contact {
+.RychardR-title, .RychardR-subheader, .RychardR-text {
   filter: drop-shadow(0px 0px 2px #000000)
   drop-shadow(0px 0px 2px #000000);
+}
+.RychardR-contact p {
+  filter: drop-shadow(0px 0px 2px var(--c-action))
+          drop-shadow(0px 0px 1px var(--c-action))
 }
 
 .RychardR-signature {

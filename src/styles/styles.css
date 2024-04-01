@@ -13,35 +13,38 @@
     buttons, tags, dates, links, etc.)
 \*-----------------------------------*/
 @font-face {
-    font-family: 'FontSecondary';
-    src: url('fonts/Cormorant-VariableFont_wght.ttf');
+  font-family: 'FontSecondary';
+  src: url('fonts/Cormorant-VariableFont_wght.ttf');
 }
 
 
 
 :root {
-    --ff-2: 'FontSecondary';
-
-    
-    --fw-l: 'lighter';
-    --fw-n: 'normal';
-    --fw-b: 'bolder';
+  --ff-2: 'FontSecondary';
 
 
-    --fs-ssss: 0.5rem;
-    --fs-sss: 0.675rem;
-    --fs-ss: 0.75rem;
-    --fs-s: 0.875rem;
-    --fs-n: 1rem;
-    --fs-l: 1.5rem;
-    --fs-ll: 2rem;
-    --fs-lll: 2.5rem;
-    --fs-llll: 3rem;
+  --fw-l: 'lighter';
+  --fw-n: 'normal';
+  --fw-b: 'bolder';
 
 
-    --c-background: hsl(0, 0%, 7%);
-    --c-text: hsl(0, 0%, 100%);
-    --c-accent: hsl(49, 100%, 50%);
+  --fs-ssss: 0.5rem;
+  --fs-sss: 0.675rem;
+  --fs-ss: 0.75rem;
+  --fs-s: 0.875rem;
+  --fs-n: 1rem;
+  --fs-l: 1.5rem;
+  --fs-ll: 2rem;
+  --fs-lll: 2.5rem;
+  --fs-llll: 3rem;
+
+
+  --c-background: hsl(0, 0%, 7%);
+  --c-text: hsl(0, 0%, 100%);
+
+  --c-action: hsl(320, 100%, 60%);
+  --c-accent: hsl(180, 60%, 50%);
+  --c-detail: hsl(57, 100%, 47%);
 
 }
 
@@ -58,6 +61,7 @@ body {
     --fs-llll: 4.5rem;
   }
 }
+
 @media (min-width: 768px) {
   :root {
     --fs-ss: 0.875rem;
@@ -69,6 +73,7 @@ body {
     --fs-llll: 6rem;
   }
 }
+
 @media (min-width: 1024px) {
   :root {
     --fs-l: 2.25rem;
@@ -77,6 +82,7 @@ body {
     --fs-llll: 7.5rem;
   }
 }
+
 @media (min-width: 1280px) {
   :root {
     --fs-ss: 1rem;
@@ -88,6 +94,7 @@ body {
     --fs-llll: 9rem;
   }
 }
+
 @media (min-width: 1536px) {
   :root {
     --fs-l: 2.75rem;
@@ -96,4 +103,3 @@ body {
     --fs-llll: 10.5rem;
   }
 }
-
