@@ -1,1 +1,0 @@
-import{_ as i}from"./index-4b4ed84e.js";class s{constructor(){this.id="links"}async getPlugin(n){const{LinkInstance:t}=await i(()=>import("./LinkInstance-9cbe5dac.js"),["assets/LinkInstance-9cbe5dac.js","assets/index-4b4ed84e.js","assets/index-27b00fd7.css","assets/CanvasUtils-3e691968.js"]);return new t(n)}loadOptions(){}needsPlugin(){return!0}}export{s as LinksPlugin};
