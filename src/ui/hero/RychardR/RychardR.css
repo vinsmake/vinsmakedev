@@ -1,39 +1,65 @@
 .RychardR {
-  font-family: var(--ffs);
-  color: var(--ctext);
+  font-family: var(--ff-2);
+  color: var(--c-text);
 }
 
 .RychardR-content {
   display: block;
   text-align: center;
+  
 }
 
 .RychardR-logo {
-  width: 10rem;
+  width: 15rem;
+}
+
+.RychardR-title {
+  font-weight: var(--fw-n);
+  font-size: var(--fs-lll);
+  margin: 0;
+
 }
 
 .RychardR-subheader {
-  font-size: 2.4rem;
-}
-
-
-
-.RychardR-title {
-  font-weight: var(--fwn);
-  font-size: 3rem;
-  margin: 0;
+  font-size: var(--fs-ll);
 }
 
 .RychardR-text {
-  font-size: 1.2rem;
+  font-size: var(--fs-n);
   letter-spacing: 5px;
 }
 
 .RychardR-contact {
-  font-size: 2rem;
+  font-size: var(--fs-l);
+}
+
+.RychardR-title, .RychardR-subheader, .RychardR-text {
+  filter: drop-shadow(0px 0px 2px #000000)
+  drop-shadow(0px 0px 2px #000000);
+}
+.RychardR-contact p {
+  filter: drop-shadow(0px 0px 2px var(--c-action))
+          drop-shadow(0px 0px 1px var(--c-action))
 }
 
 .RychardR-signature {
   margin: 1rem 0 0 0;
   width: clamp(15rem, 25rem, 80%);
+}
+
+@media (min-width: 1280px) {
+
+  .RychardR-content {
+    position: relative;
+    padding: 1rem 1rem;
+  }
+
+  .RychardR-logo {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-40%);
+    width: 35rem;
+    z-index: -1;
+  }
 }

@@ -58,10 +58,10 @@ export const TypeFlip = ({ propWords }) => {
     }, [activeLetterBoxIndex, lastActiveLetterBoxIndex, totalLetterBoxDelay, propWords]);
 
     return (
-        <div className='TypeFlip-wrapper'>
+        <p className='TypeFlip-wrapper'>
             {propWords.map((word, index) => (
                 <span key={index} className="TypeFlip-word" ref={ref => (letterBoxesRefs.current[index] = ref)}>{word}</span>
             ))}
-        </div>
+        </p>
     );
 };
