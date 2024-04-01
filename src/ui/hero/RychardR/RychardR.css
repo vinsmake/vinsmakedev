@@ -6,10 +6,15 @@
 .RychardR-content {
   display: block;
   text-align: center;
+  
 }
 
 .RychardR-logo {
   width: 10rem;
+}
+
+.RychardR-data {
+  mix-blend-mode: difference;
 }
 
 .RychardR-title {
@@ -46,29 +51,9 @@
   .RychardR-logo {
     position: absolute;
     top: 50%;
-    right: 8%;
+    right: 10%;
     transform: translateY(-40%);
     width: 35rem;
     z-index: -1;
   }
-
-  .RychardR-subheader p{
-    right: 10%;
-  }
-
-  .RychardR-text {
-    text-align: left;
-    padding-left: 25%;
-  }
-
-  .RychardR-contact {
-    text-align: left;
-    padding-left: 25%;
-  }
-
-  .RychardR-contact p{
-    right: 32%;
-  }
-
-
 }

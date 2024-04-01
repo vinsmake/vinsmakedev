@@ -1,5 +1,5 @@
 
-import { SetLettersArray } from './setLettersArray'
+import { SetLettersArray } from './SetLettersArray'
 import './setLettersArray.css'
 
 export const SetLettersArrayComponent = ({propWords}) => {
@@ -8,7 +8,7 @@ export const SetLettersArrayComponent = ({propWords}) => {
 
     return (
         <>
-            <SetLettersArray words={['diseñador', 'programador', 'roedor']}/>
+            <SetLettersArray propWords={['diseñador', 'programador', 'roedor']}/>
         </>
     )
 }

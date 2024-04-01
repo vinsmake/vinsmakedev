@@ -13,6 +13,7 @@ export const RychardR = () => {
             <section className="RychardR">
                 <div className="RychardR-content">
                     <img src={logo} className="RychardR-logo" />
+                    <div className='RychardR-data'>
                     <h1 className="RychardR-title">{hero1}</h1>
 
                     <div className="RychardR-subheader">
@@ -30,7 +31,7 @@ export const RychardR = () => {
                     })}>
                         <img src={signature} className='RychardR-signature' />
                         <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
-
+                        </div>
                     </div>
                 </div>
             </section>
