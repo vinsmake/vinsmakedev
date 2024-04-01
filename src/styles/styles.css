@@ -1,24 +1,3 @@
-/*-----------------------------------*\
-  #FONTS#
-
-  You should change the fonts, but not
-  the names, so all components can fix
-  with the new fonts.
-
-  We use three fonts in every design,
-  1.- Primary (default font, text and
-    subheaders, easy to read)
-  2.- Secondary (headliners)
-  3.- Accent (rarely used, mostly for
-    buttons, tags, dates, links, etc.)
-\*-----------------------------------*/
-@font-face {
-  font-family: 'FontSecondary';
-  src: url('./fonts/ShipporiMincho-Regular.ttf');
-}
-
-
-
 :root {
   --ff-2: 'FontSecondary';
 
@@ -46,6 +25,25 @@
   --c-accent: hsl(180, 60%, 50%);
   --c-detail: hsl(57, 100%, 47%);
 
+}
+
+/*-----------------------------------*\
+  #FONTS#
+
+  You should change the fonts, but not
+  the names, so all components can fix
+  with the new fonts.
+
+  We use three fonts in every design,
+  1.- Primary (default font, text and
+    subheaders, easy to read)
+  2.- Secondary (headliners)
+  3.- Accent (rarely used, mostly for
+    buttons, tags, dates, links, etc.)
+\*-----------------------------------*/
+@font-face {
+  font-family: FontSecondary;
+  src: url('./fonts/ShipporiMincho-Regular.ttf');
 }
 
 body {
