@@ -13,7 +13,7 @@ export const RychardR = () => {
             <section className="RychardR">
                 <div className="RychardR-content">
                     <img src={logo} className="RychardR-logo" />
-                    <div className='RychardR-data'>
+
                     <h1 className="RychardR-title">{hero1}</h1>
 
                     <div className="RychardR-subheader">
@@ -21,17 +21,17 @@ export const RychardR = () => {
                     </div>
                     <p className="RychardR-text">{hero3}</p>
 
-                    <div 
-                    className='RychardR-contact'
-                    onClick={() => SaveContact({
-                        name: 'Enrique Plascencia',
-                        phone: '3336610692',
-                        email: 'ps.enrique.e@gmail.com',
-                        website: 'vinsmake.dev'
-                    })}>
+                    <div
+                        className='RychardR-contact'
+                        onClick={() => SaveContact({
+                            name: 'Enrique Plascencia',
+                            phone: '3336610692',
+                            email: 'ps.enrique.e@gmail.com',
+                            website: 'vinsmake.dev'
+                        })}>
                         <img src={signature} className='RychardR-signature' />
                         <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
-                        </div>
+
                     </div>
                 </div>
             </section>

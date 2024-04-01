@@ -10,17 +10,14 @@
 }
 
 .RychardR-logo {
-  width: 10rem;
-}
-
-.RychardR-data {
-  mix-blend-mode: difference;
+  width: 15rem;
 }
 
 .RychardR-title {
   font-weight: var(--fw-n);
   font-size: var(--fs-llll);
   margin: 0;
+
 }
 
 .RychardR-subheader {
@@ -34,6 +31,11 @@
 
 .RychardR-contact {
   font-size: var(--fs-l);
+}
+
+.RychardR-title, .RychardR-subheader, .RychardR-text, .RychardR-contact {
+  filter: drop-shadow(0px 0px 2px #000000)
+  drop-shadow(0px 0px 2px #000000);
 }
 
 .RychardR-signature {
