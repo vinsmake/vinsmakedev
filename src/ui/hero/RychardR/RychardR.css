@@ -12,14 +12,14 @@
   width: 10rem;
 }
 
-.RychardR-subheader {
-  font-size: var(--fs-ll);
-}
-
 .RychardR-title {
   font-weight: var(--fw-n);
   font-size: var(--fs-llll);
   margin: 0;
+}
+
+.RychardR-subheader {
+  font-size: var(--fs-ll);
 }
 
 .RychardR-text {
@@ -49,5 +49,6 @@
     right: 10%;
     transform: translateY(-50%);
     width: 25rem;
+    z-index: -1;
   }
 }

@@ -1,5 +1,5 @@
 #tsparticles canvas {
-    z-index: -1;
+    z-index: -99;
     height: 100%;
     width: 100%;
     position: absolute;
