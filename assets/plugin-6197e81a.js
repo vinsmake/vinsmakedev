@@ -1,0 +1,1 @@
+import{_ as o}from"./index-058518ea.js";async function r(i,n=!0){const{LinksPlugin:t}=await o(()=>import("./LinksPlugin-0cc61396.js"),["assets/LinksPlugin-0cc61396.js","assets/index-058518ea.js","assets/index-b1b3cdea.css"]),a=new t;await i.addPlugin(a,n)}export{r as loadLinksPlugin};
