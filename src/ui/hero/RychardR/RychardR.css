@@ -15,7 +15,7 @@
 
 .RychardR-title {
   font-weight: var(--fw-n);
-  font-size: var(--fs-llll);
+  font-size: var(--fs-lll);
   margin: 0;
 
 }
@@ -25,7 +25,7 @@
 }
 
 .RychardR-text {
-  font-size: var(--fs-l);
+  font-size: var(--fs-n);
   letter-spacing: 5px;
 }
 
