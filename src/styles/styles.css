@@ -14,7 +14,7 @@
 \*-----------------------------------*/
 @font-face {
   font-family: 'FontSecondary';
-  src: url('fonts/ShipporiMincho-Regular.ttf');
+  src: url('./fonts/ShipporiMincho-Regular.ttf');
 }
 
 
