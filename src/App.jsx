@@ -9,7 +9,7 @@ export const App = () => {
   return (
   <>
     <RychardR/>
-    <ParticlesComponent id='tsparticles'/>
+    <ParticlesComponent />
   </>
   )
 }
