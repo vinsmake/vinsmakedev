@@ -1,0 +1,1 @@
+import{_ as t}from"./index-48167a48.js";async function l(a,r=!0){await a.addMover("parallax",async()=>{const{ParallaxMover:o}=await t(()=>import("./ParallaxMover-c90c3321.js"),["assets/ParallaxMover-c90c3321.js","assets/index-48167a48.js","assets/index-24496948.css"]);return new o},r)}export{l as loadParallaxMover};
