@@ -2,8 +2,7 @@
 
 
 .glowing-btn {
-    margin: 1rem 0 0 0;
-  position: relative;
+  margin: 1rem 0 0 0;
   color: var(--c-accent);
   cursor: pointer;
   padding: 0.35em 1em;
@@ -14,23 +13,14 @@
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   letter-spacing: 8px;
-
-  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--c-accent),
-    0px 0px 0.5em 0px var(--c-accent);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--c-accent),
-    0px 0px 0.5em 0px var(--c-accent);
   box-shadow: inset 0px 0px 0.5em 0px var(--c-accent),
-    0px 0px 0.5em 0px var(--c-accent);
+                    0px 0px 0.5em 0px var(--c-accent);
   animation: border-flicker 2s linear infinite;
 }
 
 .glowing-txt {
   float: left;
-  margin-right: -0.8em;
-  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--c-accent);
-  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
-    0 0 0.45em var(--c-accent);
+  margin: 0 -0.5em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--c-accent);
   animation: text-flicker 3s linear infinite;
 }
