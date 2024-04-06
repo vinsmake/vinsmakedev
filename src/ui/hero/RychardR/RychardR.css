@@ -38,12 +38,6 @@
   drop-shadow(0px 0px 2px #000000);
 }
 
-/* here we select the letters, so we dont have delay en phones, this must be changed or eliminated if we're not using TypeFlip Component */
-.RychardR-contact p p span{
-  filter: drop-shadow(0px 0px 1px var(--c-action))
-          drop-shadow(0px 0px 2px var(--c-action))
-}
-
 .RychardR-signature {
   margin: 1rem 0 0 0;
   width: clamp(15rem, 25rem, 80%);
