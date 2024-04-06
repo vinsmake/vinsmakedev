@@ -30,16 +30,12 @@
 }
 
 .RychardR-contact {
-  font-size: var(--fs-l);
+  font-size: var(--fs-n);
 }
 
 .RychardR-title, .RychardR-subheader, .RychardR-text {
   filter: drop-shadow(0px 0px 2px #000000)
   drop-shadow(0px 0px 2px #000000);
-}
-.RychardR-contact p {
-  filter: drop-shadow(0px 0px 2px var(--c-action))
-          drop-shadow(0px 0px 1px var(--c-action))
 }
 
 .RychardR-signature {
@@ -59,7 +55,7 @@
     top: 50%;
     right: 10%;
     transform: translateY(-40%);
-    width: 35rem;
+    width: 30rem;
     z-index: -1;
   }
 }

@@ -2,6 +2,7 @@ import { RychardRData } from './RychardRData'
 import './RychardR.css'
 import { TypeFlip } from '../../text/TypeFlip/TypeFlip'
 import { SaveContact } from '../../onClick/saveContact/saveContact'
+import { NightClubButton } from '../../buttons/NightClubButton'
 
 
 export const RychardR = () => {
@@ -31,7 +32,7 @@ export const RychardR = () => {
                             website: 'vinsmake.dev'
                         })}>
                         
-                        <p><TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /></p>
+                        <p>{/* <TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /> */} <NightClubButton/></p>
 
                     </div>
                 </div>
