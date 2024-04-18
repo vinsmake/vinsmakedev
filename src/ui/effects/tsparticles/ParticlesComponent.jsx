@@ -31,7 +31,7 @@ const ParticlesComponent = () => {
 
   // Obtener el valor de la variable CSS
   const root = document.documentElement;
-  const particleColor = getComputedStyle(root).getPropertyValue('--c-accent');
+  const particleColor = getComputedStyle(root).getPropertyValue('--c-effects');
 
 
   const options = useMemo(
