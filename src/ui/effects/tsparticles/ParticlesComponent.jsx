@@ -31,7 +31,8 @@ const ParticlesComponent = () => {
 
   // Obtener el valor de la variable CSS
   const root = document.documentElement;
-  const particleColor = getComputedStyle(root).getPropertyValue('--c-effects');
+  const particleColor = getComputedStyle(root).getPropertyValue('--c-effect');
+  const linkColor = getComputedStyle(root).getPropertyValue('--c-accent');
 
 
   const options = useMemo(
@@ -64,11 +65,11 @@ const ParticlesComponent = () => {
             value: particleColor,
           },
           links: {
-            color: particleColor,
+            color: linkColor,
             distance: 100,
             enable: false,
             opacity: 0.3,
-            width: 1,
+            width: 2,
           },
           move: {
             direction: "bottom",
@@ -84,7 +85,7 @@ const ParticlesComponent = () => {
             density: {
               enable: true,
             },
-            value: 200,
+            value: 300,
           },
           opacity: {
             value: 0.7,
