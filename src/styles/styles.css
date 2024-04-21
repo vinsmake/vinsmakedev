@@ -21,8 +21,8 @@
   --c-background: hsl(0, 0%, 7%);
   --c-text: hsl(0, 0%, 100%);
 
-  --c-action: hsl(162, 96%, 53%);
-  --c-accent: hsl(320, 100%, 60%) ;
+  --c-action: hsl(320, 100%, 60%);
+  --c-accent: hsl(180, 60%, 50%) ;
   --c-detail: hsl(57, 100%, 47%);
   --c-effect: hsl(162, 96%, 53%);
 
