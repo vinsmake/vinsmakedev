@@ -4,25 +4,25 @@
 .glowing-btn {
   position: relative;
   margin: 1rem 0 0 0;
-  color: var(--c-accent);
+  color: var(--c-action);
   cursor: pointer;
   padding: 0.25em 1em;
-  border: 0.15em solid var(--c-accent);
+  border: 0.15em solid var(--c-action);
   border-radius: 0.45em;
   background: none;
   perspective: 2em;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   letter-spacing: 0.2em;
-  box-shadow: inset 0px 0px 0.5em 0px var(--c-accent),
-                    0px 0px 0.5em 0px var(--c-accent);
+  box-shadow: inset 0px 0px 0.5em 0px var(--c-action),
+                    0px 0px 0.5em 0px var(--c-action);
   animation: border-flicker 2s linear infinite;
 }
 
 .glowing-txt {
   float: left;
   margin: 0 -0.5em;
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--c-accent);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--c-action);
   animation: text-flicker 3s linear infinite;
 }
 
@@ -41,7 +41,7 @@
   opacity: 0.7;
   filter: blur(1em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
-  background: var(--c-accent);
+  background: var(--c-action);
   pointer-events: none;
 }
 
@@ -54,8 +54,8 @@
   bottom: 0;
   opacity: 0;
   z-index: -1;
-  background-color: var(--c-accent);
-  box-shadow: 0 0 2em 0.2em var(--c-accent);
+  background-color: var(--c-action);
+  box-shadow: 0 0 2em 0.2em var(--c-action);
   transition: opacity 100ms linear;
 }
 

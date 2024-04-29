@@ -17,14 +17,43 @@
   --fs-lll: 2.5rem;
   --fs-llll: 3rem;
 
+  /*-----------------------------------*\
+  #COLORS#
+
+  You should change the colors, but not
+  the names, so all components can fix
+  with the new colors.
+
+  We use four special colors in every
+  design:
+  1.- action (The color of the buttons
+      we want the user to click)
+  2.- accent (The color of the things
+      we want the user to see)
+  3.- detail (rarely used, mostly for
+      data, special part of texts, etc.)
+  4.- effect (If there is a effect in
+      the design, it will have this)
+
+  Finally, we have the background color
+  and text color.
+
+  You can use this box to comment your
+  color palette:
+  
+  pink: hsl(288, 99%, 65%);
+  blue: hsl(180, 100%, 46%) ;
+  yellow: hsl(58, 87%, 53%);
+  green: hsl(103, 100%, 50%);
+\*-----------------------------------*/
 
   --c-background: hsl(0, 0%, 7%);
   --c-text: hsl(0, 0%, 100%);
 
-  --c-action: hsl(320, 100%, 60%);
-  --c-accent: hsl(180, 60%, 50%) ;
-  --c-detail: hsl(57, 100%, 47%);
-  --c-effect: hsl(162, 96%, 53%);
+  --c-action: hsl(288, 99%, 65%);
+  --c-accent: hsl(180, 100%, 46%) ;
+  --c-detail: hsl(58, 87%, 53%);
+  --c-effect: hsl(103, 100%, 50%);
 
   /*this is a green color hsl(162, 96%, 53%) */
 
