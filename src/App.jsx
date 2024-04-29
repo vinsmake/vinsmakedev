@@ -8,10 +8,10 @@ import { RychardR } from './ui/hero/RychardR/RychardR'
 
 export const App = () => {
   return (
-  <>
-    <RychardR/>
-    {/* <SlidingLogos/> */}
-    <ParticlesComponent />
-  </>
+    <>
+      <RychardR />
+      <SlidingLogos/>
+      <ParticlesComponent />
+    </>
   )
 }
