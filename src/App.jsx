@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <>
       <RychardR />
-      <SlidingLogos/>
+      {/* <SlidingLogos/> */}
       <ParticlesComponent />
     </>
   )
