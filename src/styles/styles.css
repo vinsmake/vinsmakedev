@@ -51,9 +51,9 @@
   --c-text: hsl(0, 0%, 100%);
 
   --c-action: hsl(288, 99%, 65%);
-  --c-accent: hsl(180, 100%, 46%) ;
+  --c-accent: hsl(103, 100%, 50%) ;
   --c-detail: hsl(58, 87%, 53%);
-  --c-effect: hsl(103, 100%, 50%);
+  --c-effect: hsl(180, 100%, 46%);
 
   /*this is a green color hsl(162, 96%, 53%) */
 
