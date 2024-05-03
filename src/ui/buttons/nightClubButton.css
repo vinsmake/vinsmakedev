@@ -17,6 +17,7 @@
   box-shadow: inset 0px 0px 0.5em 0px var(--c-action),
                     0px 0px 0.5em 0px var(--c-action);
   animation: border-flicker 2s linear infinite;
+  
 }
 
 .glowing-txt {
@@ -42,6 +43,8 @@
   filter: blur(1em);
   transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
   background: var(--c-action);
+/*   background-image: linear-gradient(91deg, var(--c-detail) -12.89%, var(--c-action) 30.28%, var(--c-effect) 55.05%);
+ */
   pointer-events: none;
 }
 
