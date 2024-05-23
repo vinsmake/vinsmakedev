@@ -1,3 +1,5 @@
+
+
 :root {
   --ff-2: 'FontSecondary';
 
@@ -41,21 +43,19 @@
   You can use this box to comment your
   color palette:
   
-  pink: hsl(288, 99%, 65%);
-  blue: hsl(180, 100%, 46%) ;
-  yellow: hsl(58, 87%, 53%);
-  green: hsl(103, 100%, 50%);
+  --c-action: #DB4BFE;
+  --c-accent: #4AFD01;
+  --c-detail: #FDF069;
+  --c-effect: #49ECFD;
 \*-----------------------------------*/
 
   --c-background: #010C19;
   --c-text: hsl(0, 0%, 100%);
 
-  --c-action: #DB4BFE;
+  --c-action: #ff00ff;
   --c-accent: #4AFD01;
-  --c-detail: #FDF069;
-  --c-effect: #49ECFD;
-
-  /*this is a green color hsl(162, 96%, 53%) */
+  --c-detail: #ffff00;
+  --c-effect: #00ffff;
 
 }
 
