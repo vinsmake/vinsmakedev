@@ -1,0 +1,1 @@
+import{_ as e}from"./index-452c7ce0.js";async function _(a,t=!0){const{StarDrawer:r}=await e(()=>import("./StarDrawer-e5387ff4.js"),["assets/StarDrawer-e5387ff4.js","assets/index-452c7ce0.js","assets/index-a861eb3a.css"]);await a.addShape("star",new r,t)}export{_ as loadStarShape};
