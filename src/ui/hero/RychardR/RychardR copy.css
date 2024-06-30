@@ -4,19 +4,13 @@
 }
 
 .RychardR-content {
+  display: block;
   text-align: center;
-  position: relative;
-  padding: 1rem 1rem;
+  
 }
 
 .RychardR-logo {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-40%);
-  width: 35%;
-  max-width: 60rem;
-  z-index: -1;
+  width: 30rem;
 }
 
 .RychardR-title {
@@ -49,16 +43,19 @@
   width: clamp(30rem, 50rem, 80%);
 }
 
+@media (min-width: 1280px) {
 
-
-@media (max-width: 768px) {
   .RychardR-content {
-    position: static;
+    position: relative;
+    padding: 1rem 1rem;
   }
 
   .RychardR-logo {
-    position: static;
-    transform: none;
-    width: 30rem;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-40%);
+    width: 60rem;
+    z-index: -1;
   }
 }
