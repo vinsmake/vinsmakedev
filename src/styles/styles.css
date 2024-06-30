@@ -1,23 +1,38 @@
-
-
 :root {
+
+  /*-----------------------------------*\
+                CUSTOM VARIABLE
+    Here you can put all your custom
+    variables and adit them when you
+    need it. DON'T forget to change
+    your mediaqueries if necesary
+  \*-----------------------------------*/
+
+  /*-----------------------------------*\
+            FONTS VARIABLE
+    Here we declate the variable of
+    the fonts, just below root you
+    can select the font-face
+  \*-----------------------------------*/
+
+  --ff-1: 'FontPrimary';
   --ff-2: 'FontSecondary';
+  
+  --fw-l: lighter;
+  --fw-n: normal;
+  --fw-b: bolder;
 
+  --fs-text: 2rem;
+  --fs-1: 2.8rem;
+  --fs-2: 4.4rem;
+  --fs-3: 6rem;
+  --fs-4: 7.6rem;
+  --fs-5: 9.2rem;
+  --fs-6: 9.8rem;
+  --fs-7: 11.4rem;
+  --fs-8: 13rem;
+  --fs-9: 13.6rem;
 
-  --fw-l: 'lighter';
-  --fw-n: 'normal';
-  --fw-b: 'bolder';
-
-
-  --fs-ssss: 0.5rem;
-  --fs-sss: 0.675rem;
-  --fs-ss: 0.75rem;
-  --fs-s: 0.875rem;
-  --fs-n: 1rem;
-  --fs-l: 1.5rem;
-  --fs-ll: 2rem;
-  --fs-lll: 2.5rem;
-  --fs-llll: 3rem;
 
   /*-----------------------------------*\
   #COLORS#
@@ -43,19 +58,19 @@
   You can use this box to comment your
   color palette:
   
-  --c-action: #DB4BFE;
-  --c-accent: #4AFD01;
-  --c-detail: #FDF069;
-  --c-effect: #49ECFD;
+  pink: hsl(288, 99%, 65%);
+  blue: hsl(180, 100%, 46%) ;
+  yellow: hsl(58, 87%, 53%);
+  green: hsl(103, 100%, 50%);
 \*-----------------------------------*/
 
-  --c-background: #010C19;
-  --c-text: hsl(0, 0%, 100%);
+--c-background: #010C19;
+--c-text: hsl(0, 0%, 100%);
 
-  --c-action: #ff00ff;
-  --c-accent: #4AFD01;
-  --c-detail: #ffff00;
-  --c-effect: #00ffff;
+--c-action: #ff00ff;
+--c-accent: #4AFD01;
+--c-detail: #ffff00;
+--c-effect: #00ffff;
 
 }
 
@@ -74,62 +89,81 @@
     buttons, tags, dates, links, etc.)
 \*-----------------------------------*/
 @font-face {
+  font-family: FontPrimary;
+  src: url('');
+}
+
+@font-face {
   font-family: FontSecondary;
   src: url('../fonts/ShipporiMincho-Regular.ttf');
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: var(--c-background);
+  color: var(--c-text);
+  font-family: var(--ff-1);
+  font-size: var(--fs-text);
+  overflow-x: hidden;
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 1280px) {
   :root {
-    --fs-l: 1.75rem;
-    --fs-ll: 2rem;
-    --fs-lll: 3.75rem;
-    --fs-llll: 4.5rem;
+    --fs-1: 2.55rem;
+    --fs-2: 4rem;
+    --fs-3: 5.45rem;
+    --fs-4: 6.9rem;
+    --fs-5: 8.35rem;
+    --fs-6: 8.95rem;
+    --fs-7: 10.45rem;
+    --fs-8: 12rem;
+    --fs-9: 12.55rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
   :root {
-    --fs-ss: 0.875rem;
-    --fs-s: 1rem;
-    --fs-n: 1.125rem;
-    --fs-l: 2rem;
-    --fs-ll: 3rem;
-    --fs-lll: 5rem;
-    --fs-llll: 6rem;
+    --fs-1: 2.3rem;
+    --fs-2: 3.6rem;
+    --fs-3: 4.9rem;
+    --fs-4: 6.2rem;
+    --fs-5: 7.5rem;
+    --fs-6: 8rem;
+    --fs-7: 9.35rem;
+    --fs-8: 10.8rem;
+    --fs-9: 11.4rem;
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   :root {
-    --fs-l: 2.25rem;
-    --fs-ll: 4rem;
-    --fs-lll: 6.25rem;
-    --fs-llll: 7.5rem;
+    --fs-text: 1.8rem;
+    --fs-1: 2.05rem;
+    --fs-2: 3.2rem;
+    --fs-3: 4.35rem;
+    --fs-4: 5.5rem;
+    --fs-5: 6.65rem;
+    --fs-6: 7.1rem;
+    --fs-7: 8.25rem;
+    --fs-8: 9.6rem;
+    --fs-9: 10.25rem;
   }
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 576px) {
   :root {
-    --fs-ss: 1rem;
-    --fs-s: 1.125rem;
-    --fs-n: 1.25rem;
-    --fs-l: 2.5rem;
-    --fs-ll: 5rem;
-    --fs-lll: 7.5rem;
-    --fs-llll: 9rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  :root {
-    --fs-l: 2.75rem;
-    --fs-ll: 6rem;
-    --fs-lll: 8.75rem;
-    --fs-llll: 10.5rem;
+    --fs-1: 2rem;
+    --fs-2: 2.4rem;
+    --fs-3: 2.8rem;
+    --fs-4: 3.4rem;
+    --fs-5: 4rem;
+    --fs-6: 4.6rem;
+    --fs-7: 5.2rem;
+    --fs-8: 5.8rem;
+    --fs-9: 6.4rem;
   }
 }
