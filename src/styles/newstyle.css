@@ -16,24 +16,6 @@
     3.- Accent (rarely used, mostly for
     buttons, tags, dates, links, etc.)
 \*-----------------------------------*/
-:root {
-
-    --ff-1l: 'FontPrimaryNormal';
-    --ff-1n: 'FontPrimaryNormal';
-    --ff-1b: 'FontPrimaryBold';
-    --ff-1ni: 'FontPrimaryItalic';
-
-    --fs-text: 2rem;
-    --fs-1: 2.8rem;
-    --fs-2: 4.4rem;
-    --fs-3: 6rem;
-    --fs-4: 7.6rem;
-    --fs-5: 9.2rem;
-    --fs-6: 9.8rem;
-    --fs-7: 11.4rem;
-    --fs-8: 13rem;
-    --fs-9: 13.6rem;
-}
 
 @font-face {
     font-family: 'FontPrimaryNormal';
@@ -54,6 +36,25 @@
     src: url('./fonts/ArsenalSC-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+
+    --ff-1l: 'FontPrimaryNormal';
+    --ff-1n: 'FontPrimaryNormal';
+    --ff-1b: 'FontPrimaryBold';
+    --ff-1ni: 'FontPrimaryItalic';
+
+    --fs-text: 2rem;
+    --fs-1: 2.8rem;
+    --fs-2: 4.4rem;
+    --fs-3: 6rem;
+    --fs-4: 7.6rem;
+    --fs-5: 9.2rem;
+    --fs-6: 9.8rem;
+    --fs-7: 11.4rem;
+    --fs-8: 13rem;
+    --fs-9: 13.6rem;
 }
 
 @media (max-width: 1280px) {
