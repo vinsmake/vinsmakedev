@@ -22,6 +22,13 @@ span {
   display: inline;
 }
 
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+}
+
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
