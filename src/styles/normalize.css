@@ -15,10 +15,6 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-}
-
 main {
   display: block;
 }
@@ -32,11 +28,6 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 a {
@@ -56,6 +47,7 @@ strong {
   font-weight: bolder;
 }
 
+pre,
 code,
 kbd,
 samp {
@@ -96,7 +88,6 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
 }
 
 button,
