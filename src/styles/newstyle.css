@@ -18,32 +18,24 @@
 \*-----------------------------------*/
 
 @font-face {
-    font-family: 'FontPrimaryNormal';
-    src: url('./fonts/ArsenalSC-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'FontPrimary';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'FontPrimaryBold';
-    src: url('./fonts/ArsenalSC-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'FontSecondary';
+    src: url('./fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'FontPrimaryItalic';
-    src: url('./fonts/ArsenalSC-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
 
-    --ff-1l: 'FontPrimaryNormal';
-    --ff-1n: 'FontPrimaryNormal';
-    --ff-1b: 'FontPrimaryBold';
-    --ff-1ni: 'FontPrimaryItalic';
+    --ff-1: 'FontPrimary';
+    --ff-2: 'FontSecondary';
+
+    --fw-l: light;
+    --fw-n: normal;
+    --fw-b: bold;
 
     --fs-text: 2rem;
     --fs-1: 2.8rem;
