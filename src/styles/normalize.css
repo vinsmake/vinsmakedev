@@ -10,33 +10,41 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, p, span {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+
+span {
+  display: inline;
+}
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
 }
 
 main {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 a {
@@ -56,6 +64,7 @@ strong {
   font-weight: bolder;
 }
 
+pre,
 code,
 kbd,
 samp {
@@ -96,7 +105,6 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
 }
 
 button,
