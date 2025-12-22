@@ -31,8 +31,9 @@
 }
 
 .RychardR-text {
-  font-size: var(--fs-1);
+  font-size: var(--fs-2);
   letter-spacing: 5px;
+  margin: 2rem 0;
 }
 
 .RychardR-contact {
@@ -45,7 +46,7 @@
 }
 
 .RychardR-signature {
-  margin: 3rem 0;
+  margin: 2rem 0;
   width: clamp(30rem, 50rem, 80%);
 }
 
