@@ -16,11 +16,42 @@ export const RychardR = () => {
                     <img src={logo} className="RychardR-logo" />
 
                     <h1 className="RychardR-title">{hero1}</h1>
-
-                    <div className="RychardR-subheader">
-                        <p><TypeFlip propWords={['UX Designer', 'Full Stack Developer', 'React Native Developer',]} /></p>
-                    </div>
                     <p className="RychardR-text">{hero3}</p>
+                    <div className="RychardR-subheader">
+                        <p><TypeFlip propWords={[
+                            'React',
+                            'Angular',
+                            'Astro',
+                            'Vite',
+                            'React Router',
+                            'Tailwind CSS',
+                            'Node.js',
+                            'Express.js',
+                            'NestJS',
+                            'PHP',
+                            'Laravel',
+                            'Java',
+                            'Python',
+                            'PostgreSQL',
+                            'MySQL',
+                            'Docker',
+                            'Docker Compose',
+                            'Nginx',
+                            'Linux Server Administration',
+                            'SSL/TLS',
+                            'Amazon Web Services (AWS)',
+                            'JWT Authentication',
+                            'Git',
+                            'Bash',
+                            'Agile',
+                            'Scrum',
+                            'Notion',
+                            'WordPress',
+                            'AI-Assisted Software Development'
+                        ]
+                        } /></p>
+                    </div>
+
 
                     <img src={signature} className='RychardR-signature' />
                     <div
@@ -31,8 +62,8 @@ export const RychardR = () => {
                             email: 'ps.enrique.e@gmail.com',
                             website: 'vinsmake.dev'
                         })}>
-                        
-                        <p>{/* <TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /> */} <NightClubButton/></p>
+
+                        <p>{/* <TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /> */} <NightClubButton /></p>
 
                     </div>
                 </div>
