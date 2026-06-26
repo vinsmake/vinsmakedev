@@ -63,7 +63,7 @@ export const RychardR = () => {
                             website: 'vinsmake.dev'
                         })}>
 
-                        <p>{/* <TypeFlip propWords={['Save Contact', 'Guardar Contacto']} /> */} <NightClubButton /></p>
+                        <p><NightClubButton /></p>
 
                     </div>
                 </div>
